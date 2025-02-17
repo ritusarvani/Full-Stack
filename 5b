@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        h1, p {
+            text-align: center;
+        }
+        .image {
+            background-image: url('/home/vitcse/Downloads/puppy.jpeg'); 
+            background-attachment: fixed; 
+            display: flex;
+            height: 100vh;
+            background-size: auto;
+            background-repeat: repeat-x; 
+            background-position: center;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Background Image
+    </h1>
+    <p>This page demonstrates a background image halfway down the page, tilting it horizontally.</p>   
+    <div class="image">   
+    </div>
+</body>
+</html>
