@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larger Number Program</title>
+    <style>
+        button {
+            color:white;
+            background-color:#007bff;
+            padding: 10px 20px;
+            margin:10px;
+            font-size:16px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        function findLargestNumber() {
+            let num1 = parseInt(prompt("Enter the first number"));
+            let num2 = parseInt(prompt("Enter the second number"));
+            let num3 = parseInt(prompt("Enter the third number"));
+
+            if(num1 == num2 && num2 == num3) {
+                alert("EQUAL NUMBERS");
+            } else {
+                let largest = Math.max(num1, num2, num3);
+                alert(largest + " LARGEST NUMBER");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="findLargestNumber()">Enter Numbers</button>
+</body>
+</html>
